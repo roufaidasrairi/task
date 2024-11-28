@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title> gdgc-task </title>
 </head>
@@ -14,17 +15,17 @@
         </div>
         <div class="hidden lg:flex">
             <ul class="flex items-center space-x-20 ">
-                <li><a href="#" class="hover:text-primary">Home</a></li>
-                <li><a href="#" class="hover:text-primary">About</a></li>
-                <li><a href="#" class="hover:text-primary">Our Vision</a></li>
-                <li><a href="#" class="hover:text-primary">Our abayas</a></li>
+                <li><a href="#home" class="hover:text-primary">Home</a></li>
+                <li><a href="#about" class="hover:text-primary">About</a></li>
+                <li><a href="#vision" class="hover:text-primary">Our Vision</a></li>
+                <li><a href="#abayas" class="hover:text-primary">Our abayas</a></li>
             </ul>
         </div>
         <button class="hidden lg:block bg-primary text-white px-4 lg:px-6 py-2 rounded-lg">Contact us</button>
         <button class="lg:hidden text-primary text-2xl">&#9776;</button>
     </nav>
     <!--Hero section-->
-    <section  class="flex flex-col lg:flex-row items-center justify-centre mx-[5%] lg:mx-[10%] space-y-8 lg:space-y-0 lg:space-x-8 ">
+    <section id="home" class="flex flex-col lg:flex-row items-center justify-centre mx-[5%] lg:mx-[10%] space-y-8 lg:space-y-0 lg:space-x-8 ">
         <div class="w-full lg:w-[70%] flex flex-col space-y-8">
             <h1 class="text-3xl lg:text-5xl font-semibold w-full lg:w-[70%]">
                 Welcome to <span class="text-primary"> Fashion R </span> 
@@ -44,7 +45,7 @@
         </div>
     </section> 
     <!--Section 1-->
-    <section  class="flex items-center justify-evenly mx-[10%] my-32">
+    <section id="about" class="flex items-center justify-evenly mx-[10%] my-32">
         <div>
             <img src="images/photo26.jfif" alt="" class="w-60 rounded-full">
         </div>
@@ -61,7 +62,7 @@
         
     </section>
     <!--section 2-->
-    <section class="flex items-center justify-evenly mx-[10%] my-32">
+    <section id="vesion" class="flex items-center justify-evenly mx-[10%] my-32">
         
         <div class=" flex flex-col space-y-8 w-[50%]">
             <h1 class="text-5xl font-semibold ">
@@ -86,7 +87,7 @@
 
    </section>
     <!--our abaya section-->
-    <section  class="flex items-center justify-evenly mx-[10%] my-32 ">
+    <section id="abayas" class="flex items-center justify-evenly mx-[10%] my-32 ">
        
     <div class="relative w-full max-w-lg mx-auto overflow-hidden">
         <h1 class="font-bold text-3xl text-center text-primary mt-2 ">Our Abayas </h1>
@@ -218,5 +219,11 @@ prevButton.addEventListener("click", () => {
   updateSliderPosition();
 });
 </script>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+</style>
+
 
 
